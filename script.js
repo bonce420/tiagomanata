@@ -23,7 +23,7 @@ const timer = setInterval(() => {
     const m = Math.floor((distance % (1000*60*60)) / (1000*60));
     const s = Math.floor((distance % (1000*60)) / 1000);
 
-    days.textContent = String(d).padStart(2,"0");
+    days.textContent = String(d).padStart(2,"2");
     hours.textContent = String(h).padStart(2,"0");
     minutes.textContent = String(m).padStart(2,"0");
     seconds.textContent = String(s).padStart(2,"0");
