@@ -1,58 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Meu Site</title>
 
-    <style>
-        body{
-            margin:0;
-            font-family:Arial, sans-serif;
-            background:linear-gradient(135deg,#0f172a,#2563eb);
-            color:white;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-            text-align:center;
-        }
+    <title>Coming Soon</title>
 
-        h1{
-            font-size:60px;
-            margin-bottom:10px;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        p{
-            font-size:22px;
-        }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        button{
-            padding:15px 30px;
-            font-size:18px;
-            border:none;
-            border-radius:10px;
-            cursor:pointer;
-            background:white;
-            color:#2563eb;
-            margin-top:20px;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-        button:hover{
-            transform:scale(1.05);
-        }
-    </style>
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
+
 <body>
 
-<div>
-    <h1>Bem-vindo!</h1>
-    <p>Este é o meu primeiro site criado com GitHub Pages.</p>
+    <!-- Background -->
+    <div class="background">
+        <div class="blur blur1"></div>
+        <div class="blur blur2"></div>
+    </div>
 
-    <button onclick="alert('Olá! 😀')">
-        Clica aqui
-    </button>
-</div>
+    <!-- Navbar -->
+    <header>
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="Logo">
+
+            <span>PROJECT NAME</span>
+
+        </div>
+
+        <nav>
+
+            <a href="#about">Sobre</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#contact">Contacto</a>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <span class="tag">
+            🚀 COMING SOON
+        </span>
+
+        <h1>
+            Algo incrível está a chegar.
+        </h1>
+
+        <p>
+
+            Estamos a construir uma experiência totalmente nova.
+            Fica atento porque falta muito pouco.
+
+        </p>
+
+        <!-- Countdown -->
+
+        <div class="countdown">
+
+            <div class="box">
+                <h2 id="days">00</h2>
+                <span>Dias</span>
+            </div>
+
+            <div class="box">
+                <h2 id="hours">00</h2>
+                <span>Horas</span>
+            </div>
+
+            <div class="box">
+                <h2 id="minutes">00</h2>
+                <span>Min</span>
+            </div>
+
+            <div class="box">
+                <h2 id="seconds">00</h2>
+                <span>Seg</span>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="#" class="primary">
+
+                <i class="fab fa-discord"></i>
+
+                Discord
+
+            </a>
+
+            <a href="#" class="secondary">
+
+                <i class="fab fa-instagram"></i>
+
+                Instagram
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+
+    <section id="gallery">
+
+        <h2>Pré-visualizações</h2>
+
+        <div class="gallery">
+
+            <div class="card">
+
+                <img src="images/preview1.jpg">
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/preview2.jpg">
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/preview3.jpg">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section id="about">
+
+        <h2>Sobre o Projeto</h2>
+
+        <p>
+
+            Este espaço é totalmente teu.
+
+            Podes colocar aqui a descrição do projeto,
+            novidades, história ou qualquer informação.
+
+        </p>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2>Segue-nos</h2>
+
+        <div class="socials">
+
+            <a href="#">
+                <i class="fab fa-discord"></i>
+            </a>
+
+            <a href="#">    
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        © 2026 PROJECT NAME.
+
+        Todos os direitos reservados.
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
