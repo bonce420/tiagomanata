@@ -1,3 +1,10 @@
+O corte das fotos acontece porque a regra `.card img` está com uma altura fixa de `350px` combinada com `object-fit: cover`. Isso faz com que as miniaturas estilo YouTube (que têm proporção 16:9) fiquem esticadas ou cortadas nas laterais para preencher esse espaço vertical.
+
+Para corrigir isso e fazer com que as imagens apareçam por inteiro sem cortes, o truque é mudar o `height` para `auto` ou usar uma proporção fluida baseada na largura. Além disso, ajustei o tamanho da imagem do logo no cabeçalho para ficar maior, conforme pediste.
+
+Aqui tens o teu código **`style.css`** completo e corrigido:
+
+```css
 /* ===========================
    PROJECT STYLE
 =========================== */
@@ -170,9 +177,11 @@ header{
 
 }
 
+/* LOGO ATUALIZADO: Aumentado de 42px para 65px */
 .logo img{
 
-    width:42px;
+    width:65px;
+    height:auto;
 
 }
 
@@ -460,13 +469,16 @@ section p{
 
 }
 
+/* IMAGENS CORRIGIDAS: Removida a altura fixa para não cortar as miniaturas */
 .card img{
 
     width:100%;
 
-    height:350px;
+    height:auto;
 
-    object-fit:cover;
+    aspect-ratio: 16 / 9;
+
+    object-fit:contain;
 
     display:block;
 
@@ -490,6 +502,8 @@ section p{
 
     transition:.4s;
 
+    z-index: 1;
+
 }
 
 .card:hover{
@@ -508,7 +522,7 @@ section p{
 
 .card:hover img{
 
-    transform:scale(1.08);
+    transform:scale(1.04);
 
 }
 
@@ -869,3 +883,5 @@ display:none;
 /* ==========================================
 END
 ========================================== */
+
+```
