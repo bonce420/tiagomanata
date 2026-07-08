@@ -1,33 +1,9 @@
-Aqui tens o ficheiro `script.js` completo!
-
-Coloquei a opção que adiciona exatamente 2 dias (48 horas) a partir do momento em que a página é aberta, assim é perfeito para testares e veres logo o "02" nos dias. Também deixei a opção da data fixa comentada caso prefiras usar essa mais tarde.
-
-É só copiar e colar tudo para o teu ficheiro:
-
-```javascript
-// =====================================
-// DATA DO LANÇAMENTO
-// =====================================
-
-// Opção A: 2 dias exatos a partir do momento em que abres o site (Dinâmico)
 const launchDate = new Date().getTime() + (2 * 24 * 60 * 60 * 1000);
-
-// Opção B: Data fixa (ex: 10 de Julho de 2026 às 22:00)
-// Se quiseres usar esta, apaga as duas barras "//" da linha abaixo e mete na de cima
-// const launchDate = new Date(2026, 6, 10, 22, 0, 0).getTime();
-
-// =====================================
-// ELEMENTOS
-// =====================================
 
 const days = document.getElementById("days");
 const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
-
-// =====================================
-// COUNTDOWN
-// =====================================
 
 const timer = setInterval(() => {
 
@@ -36,15 +12,9 @@ const timer = setInterval(() => {
 
     if(distance <= 0){
         clearInterval(timer);
-
         document.querySelector(".hero h1").innerHTML = "🚀 Já Estamos Online!";
         document.querySelector(".hero p").innerHTML = "Obrigado por esperares. O projeto já foi lançado.";
         document.querySelector(".countdown").style.display = "none";
-
-        // DICA: Para redirecionar para o site principal automaticamente, 
-        // tira as barras "//" da linha de baixo e muda o nome do ficheiro html:
-        // window.location.href = "principal.html"; 
-
         return;
     }
 
@@ -60,18 +30,10 @@ const timer = setInterval(() => {
 
 },1000);
 
-// =====================================
-// LUZ QUE SEGUE O RATO
-// =====================================
-
 document.addEventListener("mousemove",(e)=>{
     document.body.style.setProperty("--x",e.clientX+"px");
     document.body.style.setProperty("--y",e.clientY+"px");
 });
-
-// =====================================
-// ANIMAÇÃO AO FAZER SCROLL
-// =====================================
 
 const sections = document.querySelectorAll("section");
 
@@ -93,10 +55,6 @@ sections.forEach(section=>{
     observer.observe(section);
 });
 
-// =====================================
-// EFEITO NOS CARDS
-// =====================================
-
 const cards = document.querySelectorAll(".card");
 
 cards.forEach(card=>{
@@ -116,10 +74,6 @@ cards.forEach(card=>{
     });
 });
 
-// =====================================
-// NAVBAR SCROLL
-// =====================================
-
 window.addEventListener("scroll",()=>{
     const header=document.querySelector("header");
 
@@ -131,10 +85,6 @@ window.addEventListener("scroll",()=>{
     }
 });
 
-// =====================================
-// PEQUENO EFEITO NO TÍTULO
-// =====================================
-
 const title=document.querySelector(".hero h1");
 
 setInterval(()=>{
@@ -143,5 +93,3 @@ setInterval(()=>{
         title.style.transform="translateY(0px)";
     },600);
 },4000);
-
-```
