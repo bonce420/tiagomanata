@@ -1,4 +1,4 @@
-const launchDate = new Date().getTime() + (2 * 24 * 60 * 60 * 1000);
+const launchDate = new Date(2026, 6, 10, 22, 0, 0).getTime();
 
 const days = document.getElementById("days");
 const hours = document.getElementById("hours");
