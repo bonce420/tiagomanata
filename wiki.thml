@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TM MANATA - Coming Soon</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="blur blur1"></div>
+        <div class="blur blur2"></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="IMG_3491.jpg" alt="Logo TM Manata">
+            <span style="color: var(--primary);">TIAGO MURTINHEIRA MENDES MANATA</span>
+        </div>
+        <nav>
+            <a href="#profile">A Minha História</a>
+            <a href="#gallery">Provas</a>
+            <a href="#about">Mindset</a>
+            <a href="wiki.html" target="_blank" style="color: var(--primary);"><i class="fab fa-wikipedia-w"></i> Wiki</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <span class="tag">
+            ⚠️ VAGAS LIMITADAS EM BREVE
+        </span>
+
+        <h1>
+            O Segredo para sair das tendas.
+        </h1>
+
+        <p>
+            Como um jovem de 16 anos de Rio Maior faturou 100 Mil Euros em 3 meses.
+            O método completo será revelado quando o cronómetro chegar a zero.
+        </p>
+
+        <div class="countdown">
+            <div class="box">
+                <h2 id="days">00</h2>
+                <span>Dias</span>
+            </div>
+
+            <div class="box">
+                <h2 id="hours">00</h2>
+                <span>Horas</span>
+            </div>
+
+            <div class="box">
+                <h2 id="minutes">00</h2>
+                <span>Min</span>
+            </div>
+
+            <div class="box">
+                <h2 id="seconds">00</h2>
+                <span>Seg</span>
+            </div>
+        </div>
+
+        <div class="buttons" style="display: flex; flex-direction: column; align-items: center; gap: 15px; width: 100%;">
+            <p style="font-size: 14px; color: var(--text2); text-transform: uppercase; letter-spacing: 1px;">Garante o teu lugar antes que esgote:</p>
+            
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+                <a href="https://discord.gg/8CD8hky83g" class="primary" target="_blank">
+                    <i class="fab fa-discord"></i>
+                    Entrar na Lista VIP
+                </a>
+                
+                <a href="https://www.instagram.com/tiago__manata/" class="secondary" target="_blank" style="border-color: rgba(255,215,0,0.3); color: #fff;">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="profile" style="padding: 100px 8%; max-width: 1200px; margin: 0 auto;">
+        <div style="display: flex; flex-wrap: wrap; gap: 50px; align-items: center; justify-content: center;">
+            
+            <div style="flex: 1; min-width: 300px; max-width: 400px;">
+                <div class="card" style="cursor: default; transform: none; box-shadow: 0 0 40px rgba(255, 215, 0, 0.1);">
+                    <img src="FB_IMG_1783521439445.jpg" alt="Tiago Manata" style="width: 100%; height: auto; aspect-ratio: 1/1; object-fit: cover; border-radius: 25px;">
+                </div>
+            </div>
+
+            <div style="flex: 1; min-width: 300px; text-align: left;">
+                <h4 style="color: var(--primary); font-size: 14px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">A Verdadeira História</h4>
+                <h2 style="font-size: 42px; margin-bottom: 20px; color: #fff;">De Tendas a 100 Mil Euros.</h2>
+                <p style="font-size: 17px; color: var(--text2); line-height: 1.8;">
+                    Tiago Murtinheira Mendes Manata, 16 anos. Começou do absoluto zero, vivendo em tendas e barracas com a família em Rio Maior. 
+                    <br><br>
+                    Depois de ser um aluno desmotivado, percebeu que o seu destino era o mercado digital na Escola BORDAL Pinheiro. Em poucos meses, faturou valores que a maioria não faz numa vida e agora está prestes a abrir a caixa negra do seu método.
+                </p>
+                <div style="margin-top: 30px; padding-left: 20px; border-left: 4px solid var(--primary);">
+                    <p style="font-size: 16px; font-style: italic; color: #fff;">
+                        "Se eu consegui sair de uma tenda para 100 mil euros em 3 meses, tu também consegues. Só depende de dares o primeiro passo."
+                    </p>
+                    <span style="display: block; margin-top: 10px; color: var(--primary); font-weight: 600;">— Tiago Manata</span>
+                    
+                    <a href="wiki.html" target="_blank" style="display: inline-block; margin-top: 20px; font-size: 13px; font-weight: 600; padding: 10px 25px; border: 1px solid rgba(255,215,0,0.4); border-radius: 999px; color: #fff; text-decoration: none; transition: .3s; text-transform: uppercase; letter-spacing: 1px; background: rgba(255,255,255,0.05);">
+                        <i class="fab fa-wikipedia-w"></i> Ler artigo na Wikipédia
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Casos de Estudo & Provas</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="diddy_party_thumbnail.png">
+            </div>
+            <div class="card">
+                <img src="epstein_mystery_thumbnail.png">
+            </div>
+            <div class="card">
+                <img src="roblox_kids_thumbnail.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>O Método Manata</h2>
+        <p>
+            <strong style="color: var(--primary);">01. Aprender com os erros:</strong> Perceber que falhar faz parte do processo financeiro e usar as falhas para não repetir as mesmas estratégias.
+            <br><br>
+            <strong style="color: var(--primary);">02. Maturidade de Negócio:</strong> Ter capacidade para lidar com a frustração, assumir responsabilidades pelas próprias ações e investir de forma consciente.
+            <br><br>
+            <strong style="color: var(--primary);">03. Sair da Zona de Conforto:</strong> Não ficar estagnado. O método é para quem procura ativamente melhorar a sua mentalidade e as suas capacidades para sair da pobreza.
+        </p>
+    </section>
+
+    <footer>
+        “Vende-me esta caneta” - Tiago Manata
+    </footer>
+
+    <script src="script.js?v=8"></script>
+
+</body>
+</html>
